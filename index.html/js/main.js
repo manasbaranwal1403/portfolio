@@ -1,11 +1,11 @@
 /* -------------------------------------------
 
-Name: 		Arter
+Name: 		Manas Baranwal
 Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
+Author:		Manas Baranwal
 Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
 
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+p.s. I am available for Freelancing, Jobs and Co-ownership business. mail: manasbaranwal1403@outlook.com
 
 ------------------------------------------- */
 $(function() {
@@ -155,7 +155,7 @@ $(function() {
     }
   });
 
-  bar.animate(0.7);
+  bar.animate(0.1);
 
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
@@ -189,7 +189,7 @@ $(function() {
     }
   });
 
-  bar.animate(.95);
+  bar.animate(.8);
 
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
@@ -206,7 +206,7 @@ $(function() {
     }
   });
 
-  bar.animate(.75);
+  bar.animate(.60);
 
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
@@ -223,7 +223,7 @@ $(function() {
     }
   });
 
-  bar.animate(.65);
+  bar.animate(.40);
 
   var bar = new ProgressBar.Line(lineprog5, {
     strokeWidth: 1.72,
@@ -241,6 +241,23 @@ $(function() {
   });
 
   bar.animate(.85);
+
+  var bar = new ProgressBar.Line(lineprog6, {
+    strokeWidth: 1.72,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 3200,
+    trailWidth: 1.72,
+    svgStyle: {
+      width: '100%',
+      height: '100%'
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+
+  bar.animate(.70);
 
   // Contact form
   $('.art-input').keyup(function() {
