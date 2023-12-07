@@ -604,7 +604,7 @@ body.compensate-for-scrollbar {
 .fancybox-share {
   background: #f4f4f4;
   border-radius: 3px;
-  max-width: 90%;
+  max-width: 10%;
   padding: 30px;
   text-align: center
 }
